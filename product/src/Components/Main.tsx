@@ -1,16 +1,24 @@
-import React from "react";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Navbar from "./Navbar";
 
 // Import AddProduct component
 import AddProduct  from "../pages/AddProduct";
-import ProductCardProps from "./ProductCard";
+//import ProductCardProps from "./ProductCard";
 import Home from "../pages/Home";
 import Favorites from "../pages/Favorites";
 import NotFound from "../Components/NotFound";
 import { Layout } from "./Layout";
 
+const Main = () => {
+  return (
+    <div>
+      <Navbar />
+      {/* Add the rest of your main component content here */}
+    </div>
+  );
+};
 
 const router = createBrowserRouter([
   {
@@ -32,7 +40,7 @@ const router = createBrowserRouter([
          image="productImageURL"
          name={"Product.Name"}
          description={"Product.Description"} 
-         price={"2"}
+         price={"product.Price"}
          rating={4.5}
      />,
 
@@ -40,10 +48,7 @@ const router = createBrowserRouter([
     ],
   },
   
-  {
-    path: "/signup",
-    element: <div>Sign Up</div>,
-  },
+
 ]);
 
 createRoot(document.getElementById("root")!).render(
@@ -51,3 +56,6 @@ createRoot(document.getElementById("root")!).render(
     <RouterProvider router={router} />
   </StrictMode>
 );
+
+export default Main;
+
