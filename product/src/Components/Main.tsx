@@ -1,24 +1,13 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Navbar from "./Navbar";
 
-// Import AddProduct component
-import AddProduct  from "../pages/AddProduct";
-//import ProductCardProps from "./ProductCard";
+// Pages
 import Home from "../pages/Home";
-import Favorites from "../pages/Favorites";
 import NotFound from "../Components/NotFound";
-import { Layout } from "./Layout";
-
-const Main = () => {
-  return (
-    <div>
-      <Navbar />
-      {/* Add the rest of your main component content here */}
-    </div>
-  );
-};
+import  {Layout}  from "../Components/Layout";
+import AddProduct from "../pages/AddProduct";
+import ProductDetail from "../pages/ProductDetails";
 
 const router = createBrowserRouter([
   {
@@ -31,24 +20,23 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "../pages/Favorites",
-        element: <Favorites />,
+        path: "/add-product",
+        element: <AddProduct />,
       },
       {
-        path: "../pages/AddProduct", 
-         element: <AddProduct
-         image="productImageURL"
-         name={"Product.Name"}
-         description={"Product.Description"} 
-         price={"product.Price"}
-         rating={4.5}
-     />,
-
+        path: "/product/:id",
+        element: <ProductDetail />,
       },
     ],
   },
-  
-
+  {
+    path: "/login",
+    element: <div>Login</div>,
+  },
+  {
+    path: "/signup",
+    element: <div>Sign Up</div>,
+  },
 ]);
 
 createRoot(document.getElementById("root")!).render(
@@ -56,6 +44,3 @@ createRoot(document.getElementById("root")!).render(
     <RouterProvider router={router} />
   </StrictMode>
 );
-
-export default Main;
-
