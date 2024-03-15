@@ -5,7 +5,7 @@ import UpdateProductModal from "../Components/UpdateProductModal";
 import { ProductType } from "../types/products.d";
 //import { BeatLoader } from "react-spinners";
 
-const ProductDetailCopy = () => {
+const ProductDetails = () => {
   const { id = "" } = useParams();
   const navigate = useNavigate();
   const [product, setProduct] = useState<ProductType>();
@@ -56,4 +56,4 @@ const ProductDetailCopy = () => {
   );
 };
 
-export default ProductDetailCopy;
+export default ProductDetails;
