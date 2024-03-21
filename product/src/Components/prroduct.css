@@ -1,0 +1,28 @@
+/* Style for product card container */
+.product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for individual product card */
+  .product-card {
+    width: calc(50% - 20px); /* Adjust width as needed, subtracting margin */
+    margin: 10px; /* Adjust margin as needed */
+    background-color: green;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  /* Additional styles for product card content */
+  .product-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+  }
+  

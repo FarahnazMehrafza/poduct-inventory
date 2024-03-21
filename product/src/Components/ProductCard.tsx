@@ -14,7 +14,9 @@ export default function ProductCard({
   description,
   price,
   category,
-}: ProductType) {
+}: ProductType) 
+
+{
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia sx={{ height: 140 }} image={image} title={title} />

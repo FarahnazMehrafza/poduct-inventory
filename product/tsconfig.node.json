@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
+    "paths": { "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"]},
     "composite": true,
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "strict": true
+    
   },
   "include": ["vite.config.ts"]
 }
