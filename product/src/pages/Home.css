@@ -1,6 +1,9 @@
-ProductCountainer {
+.productContainer {
     display: flex;
     flex-direction: row;
+    margin: auto;
     gap: 2rem;
     flex-wrap: wrap
 }
+
+

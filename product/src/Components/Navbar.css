@@ -1,0 +1,28 @@
+/* Navbar container */
+.navbar {
+    background-color: #333; /* Background color */
+    overflow: hidden; /* Clear floats */
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left; /* Float the links to the left */
+    display: block; /* Make the links block elements */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    padding: 14px 20px; /* Padding */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ddd; /* Background color on hover */
+    color: black; /* Text color on hover */
+  }
+  
+  /* Active/current link */
+  .navbar a.active {
+    background-color: #555; /* Background color for active link */
+    color: white; /* Text color for active link */
+  }
+  
