@@ -4,13 +4,15 @@
 //
 
 export interface ProductType {
-  id: number;
+  _id: number;
   title: string;
   price: number;
   description: string;
   category: string;
   image: string;
   rating: RatingType;
+  addToFavorites: () => void; 
+
 }
 
 export interface RatingType {

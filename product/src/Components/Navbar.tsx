@@ -28,8 +28,8 @@ const Navbar = () => {
         </li>
         
         <li style={{ float: "left" }}>
-          <Link to="/favourite" style={linkStyle}>
-            Favourite
+          <Link to="/favorite" style={linkStyle}>
+            Favorite
           </Link>
         </li>
 

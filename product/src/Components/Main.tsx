@@ -5,10 +5,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 // Pages
 import Home from "../pages/Home";
 import NotFound from "../Components/NotFound";
-import  {Layout}  from "../Components/Layout";
+import { Layout } from "../Components/Layout";
 import AddProduct from "../pages/AddProduct";
 import ProductDetail from "../pages/ProductDetails";
-import UpdateProductModal from "../Components/UpdateProductModal"
+//import UpdateProductModal from "../Components/UpdateProductModal";
+
+import Favorite from "./Favorites"; // 
 
 const router = createBrowserRouter([
   {
@@ -28,10 +30,9 @@ const router = createBrowserRouter([
         path: "/product/:id",
         element: <ProductDetail />,
       },
-
       {
-        path: "/product/update-product",
-        element: <ProductDetail />,
+        path: "/Favorite",
+        element: <Favorite />,
       },
     ],
   },

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ProductCard from "../pages/ProductCard";
 
-// Assuming you have a Product.ts file or similar
+// Assuming you have a Product
 export interface Product {
   _id: string;
   name: string;
@@ -18,7 +18,7 @@ export default function FavoritePage() {
 
   return (
     <div>
-      <h1>Favorite Products</h1>
+      <h1>Favorites Products</h1>
       {favoriteProducts.map((product) => (
         <ProductCard
           key={product._id}
