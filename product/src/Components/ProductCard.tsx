@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-import { ProductType } from "../types/product";
+import { ProductType } from "../types/products";
 
 export default function ProductCard({
   id,

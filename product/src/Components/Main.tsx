@@ -8,6 +8,7 @@ import NotFound from "../Components/NotFound";
 import  {Layout}  from "../Components/Layout";
 import AddProduct from "../pages/AddProduct";
 import ProductDetail from "../pages/ProductDetails";
+import UpdateProductModal from "../Components/UpdateProductModal"
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/product/:id",
+        element: <ProductDetail />,
+      },
+
+      {
+        path: "/product/update-product",
         element: <ProductDetail />,
       },
     ],

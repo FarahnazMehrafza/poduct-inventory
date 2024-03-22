@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ProductType } from "../types/product";
+import { ProductType } from "../types/products";
 
 const API_URL = "https://fakestoreapi.com/products";
 

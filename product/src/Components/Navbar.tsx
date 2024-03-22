@@ -26,6 +26,22 @@ const Navbar = () => {
             Add Product
           </Link>
         </li>
+        
+        <li style={{ float: "left" }}>
+          <Link to="/favourite" style={linkStyle}>
+            Favourite
+          </Link>
+        </li>
+
+
+        <li style={{ float: "left" }}>
+          <Link to="/editProduct" style={linkStyle}>
+          EditProduct
+          </Link>
+        </li>
+
+        
+
       </ul>
     </>
   );
